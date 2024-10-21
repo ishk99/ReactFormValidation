@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(157, 157, 212);
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16%;
+}
+
+.login-form{
+    width: 230px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 10px;
+    gap: 15px;
+       
+}
+.ui-divider{
+    border: 0.9px solid gainsboro;
+    opacity: 1;
+    width: 90%;  
+}
+.ui-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.field input{
+    width: 170px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid gainsboro;
+}
+
+.field input::placeholder {
+    text-align: center;
+    color: #888;
+}
+.submit-btn{
+    width: 170px;
+    height: 30px;
+    border: 0.5px solid rgb(96, 96, 176);
+    border-radius: 5px;
+    background-color: rgb(96, 96, 176);
+    color: white;
+}
+
+.error{
+    font-size: 10px;
+    color: red;
+}

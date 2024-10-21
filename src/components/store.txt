@@ -1,0 +1,14 @@
+const validate = (values) => {
+        const errors = {};
+        const regex = /^[a-zA-Z0-9. _%+-]+@[a-zA-Z0-9. -]+\. [a-zA-Z]{2,}$/i;
+        if(!values.username){
+            errors.username = 'User name is required';
+        }
+        if(!values.email){
+            errors.email = 'User email is required';
+        }
+        if(!values.password){
+            errors.password = 'Password is required';
+        }
+        return errors;
+    }
